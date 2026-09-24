@@ -109,29 +109,33 @@ const email = "info@missioncriticalmp.com";
           </article>
         </section>
 
-        <section class="bottom-row">
-          <div class="contact-block">
-            <div class="bottom-copy">
-              <p class="section-kicker">Projects &amp; pricing</p>
+        <section class="bottom-row" aria-label="Contact and employment">
+          <article class="info-panel">
+            <div class="panel-heading">
+              <p class="section-kicker">Projects &amp; Pricing / Precios &amp; Proyectos</p>
               <h2>Have a project coming up?</h2>
             </div>
-            <div class="contact-links">
-              <a href={"tel:" + phone.replaceAll("-", "")}>{phone}</a>
-              <a href={"mailto:" + email}>{email}</a>
+            <div class="language-copy">
+              <p>For pricing, questions, and more, please email <a href={"mailto:" + email}>{email}</a></p>
+              <p lang="es">Para precios, preguntas y más, envíe un correo electrónico a <a href={"mailto:" + email}>{email}</a></p>
             </div>
-          </div>
+            <a class="panel-phone" href={"tel:" + phone.replaceAll("-", "")}>{phone}</a>
+          </article>
 
-          <div class="employment-block">
-            <div class="bottom-copy">
-              <p class="section-kicker">Employment</p>
+          <article class="info-panel">
+            <div class="panel-heading">
+              <p class="section-kicker">Employment / Empleo</p>
               <h2>Looking for work?</h2>
             </div>
-            <div class="employment-links">
+            <div class="language-copy">
+              <p>For employment, please click the link for the application and send to the email below.</p>
+              <p lang="es">Para empleo, haga clic en el enlace para la solicitud y envíelo al siguiente correo electrónico.</p>
+            </div>
+            <div class="employment-actions">
               <a class="text-link" href="/employment-application.html">Employment application <span>↗</span></a>
               <a href={"mailto:" + email}>{email}</a>
-              <p lang="es">Solicitud disponible en inglés y español.</p>
             </div>
-          </div>
+          </article>
         </section>
       </main>
 
