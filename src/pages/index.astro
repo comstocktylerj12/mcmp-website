@@ -14,28 +14,42 @@ const email = "info@missioncriticalmp.com";
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Mission Critical Material Processing | On-Site Material Processing</title>
-    <meta
-      name="description"
-      content="Mission Critical Material Processing provides on-site material processing for large-scale projects in Pennsylvania and surrounding areas."
-    />
+    <title>Mission Critical Material Processing | Mobile Crushing &amp; Material Processing</title>
+    <meta name="description" content="Mission Critical Material Processing (MCMP) provides mobile crushing, screening, material sizing, material reuse, and on-site production support for large-scale projects in Pennsylvania and surrounding areas." />
     <link rel="canonical" href="https://missioncriticalmp.com/" />
     <link rel="icon" type="image/svg+xml" href={gearLogo} />
     <meta name="theme-color" content="#f6f7f8" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Mission Critical Material Processing" />
-    <meta property="og:description" content="On-site material processing for large-scale projects." />
+    <meta property="og:site_name" content="Mission Critical Material Processing" />
+    <meta property="og:title" content="Mission Critical Material Processing | Mobile Crushing &amp; Material Processing" />
+    <meta property="og:description" content="Mobile crushing, screening, material sizing, material reuse, and on-site production support for large-scale projects in Pennsylvania and surrounding areas." />
     <meta property="og:url" content="https://missioncriticalmp.com/" />
     <meta property="og:image" content="https://missioncriticalmp.com/assets/mcmp-logo.svg" />
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@type": "Organization",
+      "@id": "https://missioncriticalmp.com/#organization",
       name: "Mission Critical Material Processing",
+      alternateName: "MCMP",
       url: "https://missioncriticalmp.com/",
+      logo: "https://missioncriticalmp.com/assets/mcmp-logo.svg",
+      image: "https://missioncriticalmp.com/assets/mcmp-logo.svg",
       email,
       telephone: "+1-607-368-5333",
-      areaServed: "Pennsylvania and surrounding areas",
-      description: "On-site material processing for large-scale projects."
+      areaServed: [
+        { "@type": "AdministrativeArea", name: "Pennsylvania" },
+        { "@type": "AdministrativeArea", name: "Surrounding areas of Pennsylvania" }
+      ],
+      knowsAbout: [
+        "Mobile crushing",
+        "On-site material processing",
+        "Screening",
+        "Material sizing",
+        "Aggregate production",
+        "Material reuse",
+        "Site-development support"
+      ],
+      description: "Mobile crushing, screening, material sizing, material reuse, and on-site production support for large-scale projects in Pennsylvania and surrounding areas."
     })} />
   </head>
 
@@ -88,7 +102,7 @@ const email = "info@missioncriticalmp.com";
             <span class="info-number">01</span>
             <div>
               <h2>What we do</h2>
-              <p>Mobile crushing, material reuse, and on-site production support.</p>
+              <p>Mobile crushing, screening, material sizing, material reuse, and on-site production support.</p>
             </div>
           </article>
 
