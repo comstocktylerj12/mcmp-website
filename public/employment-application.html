@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MCMP Employment Application</title>
+<style>
+:root{--navy:#002251;--red:#c11519;--ink:#17202b;--line:#d9dde2}
+*{box-sizing:border-box}body{margin:0;background:#f5f6f7;color:var(--ink);font:14px/1.45 Arial,sans-serif}
+.page{max-width:850px;margin:32px auto;padding:42px;background:#fff;border:1px solid var(--line)}
+header{display:flex;align-items:center;gap:22px;border-bottom:3px solid var(--navy);padding-bottom:24px;margin-bottom:28px}
+header img{width:72px;height:72px}h1{font-size:24px;letter-spacing:.02em;margin:0;color:var(--navy)}h2{font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin:28px 0 12px;color:var(--navy)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.grid.two{grid-template-columns:repeat(2,1fr)}.field{min-height:42px;border-bottom:1px solid #9aa3ad}.label{font-size:10px;font-weight:700;color:#66717d;text-transform:uppercase;letter-spacing:.06em}.line{height:23px}.wide{grid-column:1/-1}
+.checks{display:flex;flex-wrap:wrap;gap:18px;padding:8px 0}.check::before{content:"☐";margin-right:6px;color:var(--red)}
+.cert{border:1px solid var(--line);padding:16px;background:#fafbfc}.sign{display:grid;grid-template-columns:1fr 180px;gap:24px;margin-top:22px}
+footer{margin-top:28px;padding-top:16px;border-top:1px solid var(--line);font-size:11px}
+@media(max-width:650px){.page{margin:0;padding:24px}.grid,.grid.two,.sign{grid-template-columns:1fr}header img{width:56px;height:56px}}@media print{body{background:#fff}.page{border:0;margin:0;max-width:none;padding:0}.no-print{display:none}}
+</style>
+</head>
+<body>
+<main class="page">
+<header><img src="/assets/mcmp-gear.svg" alt=""><div><h1>MISSION CRITICAL MATERIAL PROCESSING</h1><div>EMPLOYMENT APPLICATION</div></div></header>
+<h2>Applicant Information</h2>
+<div class="grid">
+<div class="field"><div class="label">Full Name</div><div class="line"></div></div><div class="field"><div class="label">Phone</div><div class="line"></div></div><div class="field"><div class="label">Date</div><div class="line"></div></div>
+<div class="field wide"><div class="label">Address</div><div class="line"></div></div><div class="field"><div class="label">City / State / ZIP</div><div class="line"></div></div><div class="field"><div class="label">Email</div><div class="line"></div></div>
+</div>
+<h2>Position &amp; Employment</h2>
+<div class="grid">
+<div class="field wide"><div class="label">Position</div><div class="checks"><span class="check">Heavy Equipment Operator</span><span class="check">General Laborer</span><span class="check">Either</span></div></div>
+<div class="field"><div class="label">Available Start Date</div><div class="line"></div></div>
+<div class="field"><div class="label">Employment</div><div class="checks"><span class="check">Full-time</span><span class="check">Part-time</span><span class="check">Seasonal</span></div></div>
+<div class="field"><div class="label">Valid Driver License?</div><div class="checks"><span class="check">Yes</span><span class="check">No</span></div></div>
+<div class="field"><div class="label">Class</div><div class="line"></div></div>
+</div>
+<h2>Experience &amp; Qualifications</h2>
+<div class="grid">
+<div class="field wide"><div class="label">Equipment Operated / Years of Experience</div><div class="line"></div></div>
+<div class="field"><div class="label">Most Recent Employer</div><div class="line"></div></div><div class="field"><div class="label">Job Title</div><div class="line"></div></div><div class="field"><div class="label">Dates Employed</div><div class="line"></div></div>
+<div class="field"><div class="label">Primary Duties</div><div class="line"></div></div><div class="field"><div class="label">Reason for Leaving</div><div class="line"></div></div>
+<div class="field wide"><div class="label">Training / Certifications</div><div class="checks"><span class="check">OSHA 10</span><span class="check">OSHA 30</span><span class="check">MSHA</span><span class="check">First Aid / CPR</span><span class="check">Forklift</span><span class="check">Other</span></div></div>
+<div class="field wide"><div class="label">Other Relevant Skills, Training, or Experience</div><div class="line"></div></div>
+</div>
+<h2>Availability &amp; Job Requirements</h2>
+<div class="checks"><span class="check">Days</span><span class="check">Nights</span><span class="check">Weekends</span><span class="check">Overtime</span><span class="check">Travel / out-of-town</span></div>
+<div class="checks"><span class="check">Reliable transportation to jobsites? Yes</span><span class="check">No</span><span class="check">Authorized to work in the U.S.? Yes</span><span class="check">No</span></div>
+<div class="checks"><span class="check">Able to perform essential job duties, with or without reasonable accommodation? Yes</span><span class="check">No</span><span class="check">Age 18+? Yes</span><span class="check">No</span></div>
+<h2>References</h2>
+<div class="grid two">
+<div class="field"><div class="label">Name / Relationship / Company / Phone / Email</div><div class="line"></div><div class="line"></div></div>
+<div class="field"><div class="label">Name / Relationship / Company / Phone / Email</div><div class="line"></div><div class="line"></div></div>
+</div>
+<h2>Applicant Certification</h2>
+<div class="cert">
+I certify that the information provided is true and complete. I authorize verification of my employment, education, licenses, qualifications, and references as permitted by law.<br><br>
+I understand that false statements or material omissions may disqualify me or result in termination, and that this application is not a contract or guarantee of employment.<br><br>
+I have read and agree to the certification above.
+</div>
+<div class="sign"><div class="field"><div class="label">Applicant Signature</div><div class="line"></div></div><div class="field"><div class="label">Date</div><div class="line"></div></div></div>
+<footer>Mission Critical Material Processing is an equal opportunity employer. Reasonable accommodations are available as required by law.</footer>
+</main>
+</body>
+</html>
