@@ -290,6 +290,9 @@ h1 {
 
 .contact-block {
   border-right: 1px solid var(--line);
+  display: grid;
+  align-content: center;
+  gap: 10px;
 }
 
 .contact-block h2,
@@ -318,7 +321,7 @@ h1 {
 .employment-block {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(205px, auto);
-  align-items: end;
+  align-items: center;
   gap: 28px;
 }
 
@@ -400,12 +403,11 @@ footer span:last-child { margin-left: auto; }
 
   .employment-block {
     min-height: auto;
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    gap: 16px;
   }
 
   .employment-links { min-width: 0; }
-
-  .employment-block { grid-template-columns: 1fr; gap: 16px; }
 }
 
 @media (max-width: 520px) {
