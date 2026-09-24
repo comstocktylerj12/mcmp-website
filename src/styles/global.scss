@@ -44,10 +44,12 @@ footer {
   justify-content: space-between;
 }
 
-.brand-mark img {
-  width: 38px;
-  height: 38px;
+.brand-mark { display: block; text-decoration: none; }
+
+.header-logo {
   display: block;
+  width: 250px;
+  height: auto;
 }
 
 .header-meta {
@@ -106,15 +108,38 @@ footer {
 
 .hero-content {
   width: min(850px, calc(100% - 56px));
-  padding: 42px 0 50px;
+  padding: 34px 0 42px;
   text-align: center;
 }
 
+.construction-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 20px;
+  padding: 8px 12px;
+  border: 1px solid rgba(193, 21, 25, .28);
+  background: rgba(193, 21, 25, .045);
+  color: var(--red);
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: .14em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.construction-badge span {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--red);
+}
+
 .full-logo {
-  width: min(540px, 82%);
+  width: min(560px, 88%);
   height: auto;
   display: block;
-  margin: 0 auto 27px;
+  margin: 0 auto 25px;
 }
 
 .eyebrow,
@@ -257,9 +282,11 @@ h1 {
 
 .contact-block,
 .employment-block {
-  min-height: 135px;
-  padding: 23px 28px;
+  min-height: 150px;
+  padding: 24px 28px;
 }
+
+.bottom-copy { min-width: 0; }
 
 .contact-block {
   border-right: 1px solid var(--line);
@@ -289,21 +316,24 @@ h1 {
 .employment-links a:hover { color: var(--red); }
 
 .employment-block {
-  display: flex;
-  justify-content: space-between;
-  gap: 24px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(205px, auto);
+  align-items: end;
+  gap: 28px;
 }
 
 .employment-links {
-  align-self: end;
-  min-width: 230px;
+  min-width: 0;
+  display: grid;
+  justify-items: start;
+  gap: 4px;
 }
 
 .employment-links .text-link {
   display: inline-flex;
+  width: fit-content;
   gap: 6px;
   padding-bottom: 3px;
-  margin-bottom: 7px;
   border-bottom: 1px solid var(--red);
 }
 
@@ -339,6 +369,8 @@ footer span:last-child { margin-left: auto; }
 
   .site-header { height: 68px; }
 
+  .header-logo { width: 210px; }
+
   .header-meta span { display: none; }
 
   .hero { min-height: 500px; }
@@ -371,7 +403,9 @@ footer span:last-child { margin-left: auto; }
     flex-direction: column;
   }
 
-  .employment-links { align-self: auto; min-width: 0; }
+  .employment-links { min-width: 0; }
+
+  .employment-block { grid-template-columns: 1fr; gap: 16px; }
 }
 
 @media (max-width: 520px) {
@@ -383,11 +417,15 @@ footer span:last-child { margin-left: auto; }
     width: calc(100% - 24px);
   }
 
+  .header-logo { width: 175px; }
+
   .header-meta a { font-size: 9px; }
 
   .hero { min-height: 500px; }
 
-  .hero-content { padding: 34px 0 42px; }
+  .hero-content { padding: 28px 0 36px; }
+
+  .construction-badge { font-size: 8px; letter-spacing: .11em; }
 
   .full-logo {
     width: 88%;
