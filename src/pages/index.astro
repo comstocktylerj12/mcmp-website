@@ -1,7 +1,7 @@
 ---
 import "../styles/global.scss";
 
-const fullLogo = "/assets/mcmp-logo.svg";
+const fullLogo = "/assets/mcmp-signature-logo.svg";
 const gearLogo = "/assets/mcmp-gear.svg";
 
 const phone = "607-368-5333";
@@ -42,7 +42,7 @@ const email = "info@missioncriticalmp.com";
     <div class="site-shell">
       <header class="site-header">
         <a class="brand-mark" href="/" aria-label="Mission Critical Material Processing home">
-          <img src={gearLogo} alt="" />
+          <img class="header-logo" src={fullLogo} alt="Mission Critical Material Processing" />
         </a>
 
         <div class="header-meta">
@@ -59,20 +59,20 @@ const email = "info@missioncriticalmp.com";
           </div>
 
           <div class="hero-content">
+            <div class="construction-badge"><span></span> Website currently under construction <span></span></div>
             <img class="full-logo" src={fullLogo} alt="Mission Critical Material Processing" />
 
             <p class="eyebrow">
               <span></span>
-              On-site material processing
+              Pennsylvania &amp; surrounding areas
               <span></span>
             </p>
 
-            <h1 id="hero-title">Keeping large-scale projects moving.</h1>
+            <h1 id="hero-title">On-site material processing for large-scale projects.</h1>
 
             <p class="hero-copy">
-              Built on 10 years of industry experience, MCMP helps contractors process
-              onsite material into usable product while keeping production moving and
-              schedules on track.
+              Built on 10 years of industry experience, MCMP helps contractors turn onsite
+              material into usable product while keeping production moving and schedules on track.
             </p>
 
             <div class="hero-actions">
@@ -116,10 +116,11 @@ const email = "info@missioncriticalmp.com";
               <a href={"tel:" + phone.replaceAll("-", "")}>{phone}</a>
               <a href={"mailto:" + email}>{email}</a>
             </div>
+            </div>
           </div>
 
           <div class="employment-block">
-            <div>
+            <div class="bottom-copy">
               <p class="section-kicker">Employment</p>
               <h2>Looking for work?</h2>
             </div>
