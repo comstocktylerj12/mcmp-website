@@ -1,7 +1,7 @@
 ---
 import "../styles/global.scss";
-import fullLogo from "../../public/assets/mcmp-logo.svg";
-import gearLogo from "../../public/assets/mcmp-gear.svg";
+const fullLogo = "/assets/mcmp-logo.svg";
+const gearLogo = "/assets/mcmp-gear.svg";
 
 const phone = "607-368-5333";
 const email = "info@missioncriticalmp.com";
@@ -37,7 +37,7 @@ const email = "info@missioncriticalmp.com";
     <div class="site-shell">
       <header class="site-header">
         <a class="brand-mark" href="/" aria-label="Mission Critical Material Processing home">
-          <img src={gearLogo.src} alt="" />
+          <img src={gearLogo} alt="" />
         </a>
         <a class="header-contact" href={"mailto:" + email}>Contact MCMP <span>↗</span></a>
       </header>
@@ -47,7 +47,7 @@ const email = "info@missioncriticalmp.com";
           <div class="hero-grid"></div>
           <div class="hero-content">
             <p class="eyebrow"><span></span> Pennsylvania &amp; surrounding areas</p>
-            <img class="full-logo" src={fullLogo.src} alt="Mission Critical Material Processing" />
+            <img class="full-logo" src={fullLogo} alt="Mission Critical Material Processing" />
             <h1 id="hero-title">On-site material processing for large-scale projects.</h1>
             <p class="hero-copy">
               Built on 10 years of industry experience, MCMP helps contractors turn onsite
